@@ -1,2 +1,2 @@
 # Rider
-This Is A Rider App. This is an android Application.  
+This is an Android Application Developed On Java language.  
