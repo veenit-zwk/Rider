@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">Rider2</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_shipping">Shipping</string>
+    <string name="menu_bottles">Bottles</string>
+    <string name="menu_rider_utils">Rider Utils</string>
+    <string name="menu_logout">LogOut</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supersede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efficient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="menu_help">Help</string>
+    <string name="rider_dashboard">Rider DashBoard</string>
+    <string name="products_lifted">Items Lifted</string>
+    <string name="rider_last_month_details">Last 30 Days</string>
+    <string name="KM_Travelled">KM Travelled</string>
+    <string name="demo_data_Item_types">Item Types:3</string>
+    <string name="demo_data_Item_count">Item Count:25</string>
+    <string name="tv_total_bottles">Total Bottles Collected</string>
+    <string name="good_morning">good morning!</string>
+    <string name="developer">Vinit Kumar</string>
+    <string name="zworthkey">https://zworthkey.com</string>
+    <string name="completed_23">Completed:23</string>
+    <string name="pending_25">Pending:25</string>
+    <string name="collected_200">Collected:200</string>
+    <string name="to_collect_120">To Collect:120</string>
+    <string name="payment">Payment</string>
+    <string name="collected_1150">Collected:1150</string>
+    <string name="pending_0">Pending:0</string>
+    <string name="refund">Refund</string>
+    <string name="refunded_1000">Refunded:1000</string>
+
+    <string name="total_shipping">Total Shipping</string>
+    <string name="_7000">7000</string>
+    <string name="_51000">51000</string>
+    <string name="description">description</string>
+    <string name="property">Property</string>
+    <string name="value">Value</string>
+    <string name="action">Action</string>
+    <string name="shipping_id">Shipping ID: 4</string>
+    <string name="product_type">Product Type</string>
+    <string name="goat_milk_500_ml">G-M-500</string>
+    <string name="update">Update</string>
+    <string name="quantity">Quantity</string>
+    <string name="otp">OTP CODE</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="status_complete">Complete</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="delivery_status">Delivery Status</string>
+    <string name="accepted">Accepted</string>
+    <string name="payments_all_today">All Payments Of The Day</string>
+    <string name="today_s_all_shipping">All Shipping Of The Day</string>
+    <string name="payment_id">Payment ID</string>
+    <string name="SN">S.N</string>
+    <string name="oder_subscription_id">Subscription ID</string>
+    <string name="receiver_name">Receiver Name</string>
+    <string name="received_item">Ordered Items</string>
+    <string name="id">ID</string>
+    <string name="shipping_address">Address</string>
+    <string name="status">Status</string>
+    <string name="empty_bottles">Empty Bottles</string>
+    <string name="address_demo">Address 123455667</string>
+    <string name="demo_2">2</string>
+    <string name="status_demo">status</string>
+    <string name="varient_id">Variant ID</string>
+    <string name="Order_amount">Order Amount</string>
+    <string name="gross_order_amount">Gross Order Amount</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="customer_contact">Customer Contact</string>
+    <string name="developer_contact">+917007815641</string>
+    <string name="call">Call</string>
+    <string name="collect">Collect</string>
+    <string name="shipping_note">Shipping Note</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="vendor_id">Vendor ID</string>
+    <string name="transaction_amount">Trans. Amount</string>
+    <string name="refund_id">Refund ID</string>
+    <string name="refunds_all_today">All Refunds Of The Day</string>
+    <string name="today_s_all_items_lifted">All Items Lifted Today</string>
+    <string name="product_variant">Product Variant</string>
+    <string name="remaining">Remaining</string>
+    <string name="delivered">Delivered</string>
+    <string name="prompt_username_or_email">Username or Email</string>
+    <string name="view_pdf_report">View PDF Report</string>
+    <string name="share_pdf_report">share PDF Report</string>
+    <string name="next_nearest_customer">Next Nearest Customer</string>
+    <string name="find_best_way">Find Best Way</string>
+
+
+
+
+
+
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="info">Info</string>
+    <string name="intro_message">This sample demonstrates how to use PdfRenderer to display PDF documents on the screen.</string>
+    <string name="app_name_with_index">ZWK PDF Renderer (%1$d/%2$d)</string>
+
+
+</resources>

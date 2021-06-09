@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Scroll view start on complete layout-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollViewHome"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+    <!--LinearLayOut Of Complete Layout Start-->
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--First CardView for Greeting Start-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">       <!--TextView For Greeting Start-->
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/good_morning"
+                android:textAlignment="center"
+
+                android:textSize="@dimen/cardView_greeting_text_size" />
+            <!--TexantView For Greeting End-->
+
+
+            <!--TextView For RiderName Start-->
+            <!--TODO Put The Dynamic Data For Username-->
+            <TextView
+                android:id="@+id/text_Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/developer"
+                android:textAlignment="center"
+                android:textSize="@dimen/cardView_greeting_text_size" />
+            <!--TextView For RiderName End-->
+
+            <!--ImageView For ColoredLine Start-->
+            <!--ImageView For ColoredLine End-->
+
+            <!--TextView For Rider Dashboard Heading Start-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/line_zwk"
+                android:contentDescription="@string/zworthkey" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:text="@string/rider_dashboard"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/cardView_heading_text_size" />
+            <!--TextView For Rider Dashboard Heading End-->
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.cardview.widget.CardView>
+    <!--First CardView for Greeting End-->
+
+    <!--OuterLinearLayout1 start hare -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--LinearLayOut inner start here-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp">
+
+            <!--CardView for shipping Start Hare-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/card_shipping"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                app:cardElevation="4dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:translationZ="2dp"
+                android:focusable="true">
+
+                <!--Layout for CardView Shipping start here-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp">
+
+                    <!--Linear Layout for Icon and Heading start-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:padding="8dp"
+                            android:background="@drawable/icons_background"
+                            android:src="@drawable/ic_shipping"
+                            android:contentDescription="@string/zworthkey" />
+
+                        <TextView
+                            android:id="@+id/tv_new_product"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/menu_shipping"
+                            android:textColor="#434242"
+                            android:textSize="@dimen/cardView_heading_text_size" />
+
+                    </LinearLayout>
+                    <!--Linear Layout for Icon and Heading End-->
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/completed_23"
+                        android:textSize="@dimen/cardView_default_text_size" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/pending_25"
+                        android:textSize="@dimen/cardView_default_text_size" />
+
+                </LinearLayout>
+                <!--Layout for CardView Shipping End here-->
+
+            </androidx.cardview.widget.CardView>
+            <!--CardView for shipping End Hare-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/card_Bottles"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                app:cardElevation="4dp"
+                android:translationZ="2dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:padding="8dp"
+                            android:background="@drawable/icons_background"
+                            android:src="@drawable/ic_bottle"
+                            android:contentDescription="@string/zworthkey" />
+
+                        <TextView
+                            android:id="@+id/tv_accepted_product"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/menu_bottles"
+                            android:textColor="#434242"
+                            android:textSize="@dimen/cardView_heading_text_size" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collected_200"
+                        android:textSize="@dimen/cardView_default_text_size"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_collect_120"
+                        android:textSize="@dimen/cardView_default_text_size"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/card_payment_home"
+            app:cardCornerRadius="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            app:cardElevation="4dp"
+            android:translationZ="2dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="8dp"
+                        android:background="@drawable/icons_background"
+                        android:src="@drawable/ic_payment_white"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_new_product2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/payment"
+                        android:textColor="#434242"
+                        android:textSize="@dimen/cardView_heading_text_size" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/collected_1150"
+                    android:textSize="@dimen/cardView_default_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/pending_0"
+                    android:textSize="@dimen/cardView_default_text_size" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/card_refund_home"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            app:cardElevation="4dp"
+            android:translationZ="2dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="8dp"
+                        android:background="@drawable/icons_background"
+                        android:src="@drawable/ic_refund_white"
+                        android:contentDescription="@string/zworthkey" />
+
+                    <TextView
+                        android:id="@+id/tv_accepted_product1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/refund"
+                        android:textColor="#434242"
+                        android:textSize="@dimen/cardView_heading_text_size" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refunded_1000"
+                    android:gravity="center"
+                    android:textSize="@dimen/cardView_default_text_size"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pending_0"
+                    android:gravity="center"
+                    android:textSize="@dimen/cardView_default_text_size"
+                    android:layout_marginTop="8dp"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/card_product_types_and_quantity"
+            app:cardCornerRadius="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            app:cardElevation="4dp"
+            android:translationZ="2dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="8dp"
+                        android:background="@drawable/icons_background"
+                        android:src="@drawable/ic_item_lifted_white"
+
+                        android:contentDescription="@string/zworthkey" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/products_lifted"
+                        android:textColor="#434242"
+                        android:textSize="@dimen/cardView_heading_text_size" />
+
+                </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:text="@string/demo_data_Item_types"
+                        android:textSize="@dimen/cardView_default_text_size" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:text="@string/demo_data_Item_count"
+                        android:textSize="@dimen/cardView_default_text_size" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/card_total_KM_today"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            app:cardElevation="4dp"
+            android:visibility="invisible"
+            android:translationZ="2dp"
+            android:focusable="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="8dp"
+                        android:background="@drawable/icons_background"
+                        android:src="@drawable/ic_shipping"
+                        android:contentDescription="@string/zworthkey"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/KM_Travelled"
+                        android:textColor="#434242"
+                        android:textSize="@dimen/cardView_heading_text_size" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/TV_total_KM_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+<!--Here is the TextView For Last 30 Day Heading-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/black"
+            android:text="@string/rider_last_month_details"
+            android:textAlignment="center"
+            android:textSize="@dimen/cardView_heading_text_size"
+            android:textColor="@color/white"
+            />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/cardView_total_shipping"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:translationZ="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            tools:ignore="KeyboardInaccessibleWidget">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/icons_background"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_shipping"
+                        android:contentDescription="@string/zworthkey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/total_shipping"
+                        android:textColor="#434242"
+                        android:textSize="@dimen/cardView_heading_text_size" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_total_shipping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:text="@string/_7000"
+                    android:textSize="@dimen/cardView_default_text_size" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/cardView_total_bottles"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:translationZ="2dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+
+                    android:orientation="horizontal"
+                    tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/icons_background"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_total_bottles_collected"
+                        android:contentDescription="@string/zworthkey" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/tv_total_bottles"
+                        android:textColor="#434242"
+                        android:textSize="@dimen/cardView_heading_text_size" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_total_bottles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/_51000"
+                    android:textSize="@dimen/cardView_default_text_size" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+</ScrollView>
+

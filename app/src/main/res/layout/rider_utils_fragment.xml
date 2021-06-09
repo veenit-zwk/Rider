@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.riderUtils.RiderUtilsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/logo"
+                    android:layout_marginTop="0dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="160dp"
+                    android:src="@drawable/ic_line_high"
+                    />
+            </FrameLayout>
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rider_utils_view_pdf_report"
+            android:layout_width="wrap_content"
+            android:text="@string/view_pdf_report"
+            android:layout_gravity="center"
+
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rider_utils_share_pdf_report"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/share_pdf_report"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rider_utils_nearest_customer"
+            android:layout_width="wrap_content"
+            android:text="@string/next_nearest_customer"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rider_utils_find_best_way"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/find_best_way"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>
+
+
+
+
+</FrameLayout>

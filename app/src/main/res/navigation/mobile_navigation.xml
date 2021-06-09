@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:width="400px"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.zworthkey.rider2.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_Shipping"
+        android:name="com.zworthkey.rider2.ui.shipping.ShippingFragment"
+        android:label="@string/menu_shipping"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_bottles"
+        android:name="com.zworthkey.rider2.ui.bottels.BottelsFragment"
+        android:label="@string/menu_bottles"
+        tools:layout="@layout/bottles_fragment" />
+
+    <fragment
+        android:id="@+id/nav_utils"
+        android:name="com.zworthkey.rider2.ui.riderUtils.RiderUtilsFragment"
+        android:label="@string/menu_rider_utils"
+        tools:layout="@layout/rider_utils_fragment"
+         />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.zworthkey.rider2.ui.riderUtils.HelpFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/help_fragment"
+        />
+
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.zworthkey.rider2.ui.login.LogOut"
+        android:label="@string/title_activity_login"
+
+         />
+
+
+</navigation>
